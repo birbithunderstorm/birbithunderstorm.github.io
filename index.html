@@ -9,11 +9,11 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f0f0f0;
             color: #333;
         }
         header {
-            background: #005f73;
+            background: #000;
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -26,7 +26,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background: #0a9396;
+            background: #333;
         }
         nav a {
             color: #fff;
@@ -36,7 +36,7 @@
             font-weight: bold;
         }
         nav a:hover {
-            background: #005f73;
+            background: #000;
         }
         section {
             padding: 60px 20px;
@@ -48,16 +48,16 @@
         section h2 {
             margin-top: 0;
             font-size: 2em;
-            color: #005f73;
-            border-bottom: 2px solid #0a9396;
+            color: #000;
+            border-bottom: 2px solid #333;
             padding-bottom: 10px;
         }
-        .projects {
+        .projects, .skills, .experience {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
-        .project {
+        .project, .skill, .job {
             background: #e9ecef;
             padding: 15px;
             margin: 10px;
@@ -65,23 +65,23 @@
             width: 45%;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        .project img {
+        .project img, .job img {
             max-width: 100%;
             border-radius: 8px;
         }
-        .project h3 {
+        .project h3, .skill h3, .job h3 {
             margin: 0 0 10px 0;
             font-size: 1.5em;
             color: #333;
         }
-        .project p {
+        .project p, .skill p, .job p {
             font-size: 1em;
             color: #555;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background: #005f73;
+            background: #000;
             color: #fff;
             position: relative;
             bottom: 0;
@@ -95,12 +95,52 @@
     </header>
     <nav>
         <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
     <section id="about">
         <h2>About Me</h2>
         <p>I am a media architect with a passion for creating immersive and engaging media experiences. With a background in both digital and physical media, I strive to blend traditional and modern techniques to deliver innovative solutions.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Media Design</h3>
+                <p>Expertise in designing visual and interactive media, including video, graphics, and animations.</p>
+            </div>
+            <div class="skill">
+                <h3>Architectural Visualization</h3>
+                <p>Proficient in creating 3D models and visualizations for architectural projects using industry-standard software.</p>
+            </div>
+            <div class="skill">
+                <h3>Project Management</h3>
+                <p>Experienced in managing complex media projects from concept to completion, ensuring timely delivery and quality output.</p>
+            </div>
+            <div class="skill">
+                <h3>Creative Coding</h3>
+                <p>Skilled in using coding languages and tools to develop interactive media installations and digital experiences.</p>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="job">
+                <h3>Senior Media Architect</h3>
+                <p>XYZ Media Company, 2018 - Present</p>
+                <p>Leading a team of media designers to create innovative media installations for public and private spaces.</p>
+                <img src="https://via.placeholder.com/300" alt="Senior Media Architect">
+            </div>
+            <div class="job">
+                <h3>Media Designer</h3>
+                <p>ABC Design Studio, 2015 - 2018</p>
+                <p>Worked on various projects including corporate videos, interactive exhibits, and digital marketing campaigns.</p>
+                <img src="https://via.placeholder.com/300" alt="Media Designer">
+            </div>
+        </div>
     </section>
     <section id="projects">
         <h2>Projects</h2>
@@ -126,3 +166,4 @@
     </footer>
 </body>
 </html>
+
